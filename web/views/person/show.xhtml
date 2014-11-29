@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:body>
+        <ui:composition template="/views/layouts/app.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="app-main"><span></span>Home</h:commandLink></li>
+                <li><h:commandLink action="gallery"><span></span>Proyectos</h:commandLink></li>
+            </ui:define>
+
+            <ui:define name="content">
+                <h1>
+                    Perfil de ${user.name} ${user.surname}
+                </h1>
+
+                <h:panelGrid columns="2" columnClasses="formLabel, formInput">
+                    <h:outputLabel value="Estado Actual:"/>
+                    <h:outputText value="#{user.relationshipStatus}"/>
+                    <h:outputLabel value="Sexo:"/>
+                    <h:outputText value="#{user.gender}"/>
+                    <h:outputLabel value="Fecha de Nacimiento:"/>
+                    <h:outputText value="#{user.birthdate}"/>
+                    <h:outputLabel value="Orientacion Sexual:"/>
+                    <h:outputText value="#{user.sexualOrientation}"/>
+                    <h:outputLabel value="Email:"/>
+                    <h:outputText value="#{user.email}"/>
+                    <h:outputLabel value="Acerca de ti:"/>
+                    <h:outputText value="#{user.aboutMe}"/>
+                    <h:outputLabel value="Libros Favoritos:"/>
+                    <h:outputText value="#{user.books}"/>
+                    <h:outputLabel value="Musica Favorita:"/>
+                    <h:outputText value="#{user.music}"/>
+                    <h:outputLabel value="Peliculas Favoritas:"/>
+                    <h:outputText value="#{user.movies}"/>
+                </h:panelGrid>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </h:body>
+</html>

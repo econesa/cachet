@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="/views/layouts/main.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="app-main"><span></span>Home</h:commandLink></li>
+                <li><h:commandLink action="gallery"><span></span>Proyectos</h:commandLink></li>
+            </ui:define>
+
+            <ui:define name="top">
+                <p style="text-align:left;">Login</p>
+                <h:form id="login">
+                    <h:panelGrid columns="2" border="0">
+                        Username: <h:inputText id="username"
+                                               value="#{userManager.username}"/>
+                        Password: <h:inputSecret id="password"
+                                                 value="#{userManager.password}"/>
+                        <h:commandLink value="¿Nuevo?" action="person/new"/>
+                        <h:commandButton id="submit" type="submit" value="Login"
+                                         action="#{userManager.validateUser}"/>
+                    </h:panelGrid>
+                </h:form>
+                <h:messages style="color: red" showDetail="true"/>
+            </ui:define>
+
+            <ui:define name="content">
+
+                <div class="section_w940">
+                    <p class="em_text">Bienvenido a nuestro sitio!<br/>
+                        En este lugar podras mantener contacto con tus amigos
+                        amantes de la fotografia y compartir fotos.
+                    </p>
+                </div>
+
+                <div class="section_w940">
+
+                    <div class="section_w430 margin_r_80">
+
+                        <h2>Formas de Entretenimiento</h2>
+                        <h:graphicImage styleClass="image_wrapper fr_image" alt="Molly"
+                                        name="images/molly_002_mini.jpg"/>
+                        <p>Te invitamos a ver nuestro proyecto de fotografia 
+                            en donde se muestra diversas formas de
+                            entretenimiento en la ciudad.
+                        </p>
+                        <div class="cleaner_h10"></div>
+                        <div class="button"><a href="#">more</a></div>
+
+                    </div>
+
+                    <div class=" section_w430">
+
+                        <h2>Fotografia Estenopeica </h2>
+                        <h:graphicImage styleClass="image_wrapper fr_image" alt="Fotografia Estenopeica"
+                                        name="images/muestra_a_mini.jpg"/>
+                        <p>Este apartado trata brevemente acerca de la fotografica de esteneopeica:
+                            en que consiste, construccion de una camara estenopeica y algunas muestras
+                            realizadas para el laboratorio de fotografia.</p>
+                        <div class="cleaner_h10"></div>
+                        <div class="button"><a href="#">more</a></div>
+
+                    </div>
+
+                    <div class="cleaner"></div>
+                </div>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

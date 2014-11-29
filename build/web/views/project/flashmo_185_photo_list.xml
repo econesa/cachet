@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<photos>
+	<photo>
+		<thumbnail>s_molly_001.jpg</thumbnail>
+		<filename>molly_001.jpg</filename>
+		<title>Mascotas</title>
+		<description>
+		Molquis!!!!
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>CIMG0336_mini.jpg</thumbnail>
+		<filename>CIMG0336_medium.jpg</filename>
+		<title>Musica</title>
+		<description>Sabor Criollo</description>
+	</photo>
+	<photo>
+		<thumbnail>CIMG0321_mini.jpg</thumbnail>
+		<filename>CIMG0321_medium.jpg</filename>
+		<title>Musica</title>
+		<description>
+		Expresion musical
+		</description>
+	</photo>
+	
+	<photo>
+		<thumbnail>CIMG0331_mini.jpg</thumbnail>
+		<filename>CIMG0331_medium.jpg</filename>
+		<title>Comida</title>
+		<description>
+		Parrilla
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>CIMG0344_mini.jpg</thumbnail>
+		<filename>CIMG0344_medium.jpg</filename>
+		<title>Juegos</title>
+		<description>
+		Pool
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>CIMG0300_mini.jpg</thumbnail>
+		<filename>CIMG0300_medium.jpg</filename>
+		<title>Arte</title>
+		<description>
+		Expresion artistica
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>CIMG0297_mini.jpg</thumbnail>
+		<filename>CIMG0297_medium.jpg</filename>
+		<title>Arte</title>
+		<description>
+		Rebeldia
+		</description>
+	</photo>
+</photos>

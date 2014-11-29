@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 21, 2010 6:31:22 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="cachet" name="cachet.model.Person" table="person">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="personId" type="string">
+      <column name="person_id" not-null="true"/>
+    </property>
+    <property name="password" type="string">
+      <column name="password"/>
+    </property>
+    <property name="role" type="string">
+      <column name="role"/>
+    </property>
+    <property name="name" type="string">
+      <column name="name" not-null="true"/>
+    </property>
+    <property name="surname" type="string">
+      <column name="surname" not-null="true"/>
+    </property>
+    <property name="relationshipStatus" type="string">
+      <column length="500" name="relationshipStatus"/>
+    </property>
+    <property name="sexualOrientation" type="string">
+      <column length="500" name="sexualOrientation"/>
+    </property>
+    <property name="gender" type="string">
+      <column name="gender"/>
+    </property>
+    <property name="email" type="string">
+      <column name="email"/>
+    </property>
+    <property name="aboutMe" type="string">
+      <column length="1000" name="aboutMe"/>
+    </property>
+    <property name="books" type="string">
+      <column length="2000" name="books"/>
+    </property>
+    <property name="music" type="string">
+      <column length="2000" name="music"/>
+    </property>
+    <property name="movies" type="string">
+      <column length="2000" name="movies"/>
+    </property>
+    <property name="birthdate" type="date">
+      <column length="10" name="birthdate"/>
+    </property>
+    <property name="updated" type="date">
+      <column length="10" name="updated"/>
+    </property>
+  </class>
+</hibernate-mapping>

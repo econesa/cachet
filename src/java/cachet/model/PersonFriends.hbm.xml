@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 21, 2010 6:31:22 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="cachet" name="cachet.model.PersonFriends" table="person_friends">
+    <composite-id class="cachet.model.PersonFriendsId" name="id">
+      <key-property name="personId" type="string">
+        <column name="person_id"/>
+      </key-property>
+      <key-property name="friendId" type="string">
+        <column name="friend_id"/>
+      </key-property>
+      <key-property name="appId" type="int">
+        <column name="app_id"/>
+      </key-property>
+    </composite-id>
+    <property name="relationship" type="string">
+      <column name="relationship"/>
+    </property>
+    <property name="privileges" type="string">
+      <column length="10" name="privileges"/>
+    </property>
+    <property name="updated" type="date">
+      <column length="10" name="updated"/>
+    </property>
+  </class>
+</hibernate-mapping>

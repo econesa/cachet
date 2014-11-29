@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>        
+        <ui:composition template="/views/layouts/app.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="app-main">
+                        <span></span>Home</h:commandLink>
+                </li>
+                <li><h:commandLink action="gallery"><span></span>Proyectos
+                    </h:commandLink></li>
+            </ui:define>
+
+            <ui:define name="top">
+                <h:form>
+                    <h:commandButton id="logout" value="Logout"
+                                     action="#{userManager.logout}"/>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h1>People #{param.personId}</h1>
+                <h:form>
+
+                    <h:dataTable value="#{searchFriendBean.people}" var="item"
+                                 border="0" cellpadding="2" cellspacing="0"
+                                 rowClasses="jsfcrud_odd_row,jsfcrud_even_row"
+                                 rules="all" style="border:solid 1px">
+                        <h:column>#{item.name} #{item.surname}
+                        </h:column>
+                        <h:column>
+
+                            <h:commandLink style="padding: 5px;" action="#{searchFriendBean.add}" value="Add"/>
+                            
+                            <!--<h:commandButton type="submit" action=""
+                                             value="Add">
+                                <f:param name="fid" value="econesa" />
+                                <f:param name="pid" value="rarias" />
+                                <f:attribute name="pid" value="rarias"#{user.personId} #{item.personId}/>
+                                <f:attribute name="friend" value="" />Add
+                            </h:commandButton>-->
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="views/person/list.xhtml" x="668" y="237" zoom="true"/>
+        <Node id="views/layouts/app.xhtml" x="81" y="52" zoom="true"/>
+        <Node id="views/friends/list.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="index.xhtml" x="41" y="298" zoom="true"/>
+        <Node id="views/layouts/main.xhtml" x="82" y="92" zoom="true"/>
+        <Node id="views/person/show.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="views/project/show.xhtml" x="336" y="160" zoom="true"/>
+        <Node id="views/person/create.xhtml" x="332" y="379" zoom="true"/>
+        <Node id="views/layouts/gallery.xhtml" x="81" y="15" zoom="true"/>
+        <Node id="views/welcome.xhtml" x="410" y="239" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

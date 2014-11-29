@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="/views/layouts/app.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="app-main"><span></span>Home</h:commandLink></li>
+                <li><h:commandButton id="logout" value="Logout" action="#{userManager.logout}"/></li>
+            </ui:define>
+
+            <ui:define name="content">
+                <h2>Bienvenid@, ${user.name} ${user.surname}!</h2>
+                <h:panelGrid columns="1">
+                    <h:link outcome="perfil">Ver mi Perfil</h:link>
+                    <h:link outcome="person/friends">Ver mis Amigos</h:link>
+                    <h:form>
+                        <h:outputLabel value="Encuentra a tus amigos!"/><br/>
+                        <h:inputText label="keys" value="#{searchFriendBean.keys}"/>
+                        <h:commandButton type="submit" value="Buscar" action="person/list"/>
+                        <br/>
+                    </h:form>
+                </h:panelGrid>
+
+                <!--<h:outputLink value="person/list.xhtml">
+                    <f:param name="keys" value="eli" />Buscar
+                </h:outputLink>-->
+                <!--<h:form><f:param name="personId" value="#{user.personId}"/>
+                    <h:outputLabel value="Escribe un mensaje"/><br/>
+                    <h:inputText value=""/>
+                    <h:commandButton value="Publicar" action="index"/>
+                <h:outputText>Aqui va el muro</h:outputText>
+                <h:outputText>Conexion con Twitter</h:outputText>
+                </h:form>-->
+
+
+                <div class="section_w940">
+
+                    <div id="SlideItMoo_outer">
+                        <div id="SlideItMoo_inner">
+                            <div id="SlideItMoo_items">
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_03.jpg"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_04.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_05.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_06.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_07.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_08.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_09.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_10.jpg"/>
+                                    </a>
+                                </div>
+
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_11.jpg"/>
+                                    </a>
+
+                                </div>
+                                <div class="SlideItMoo_element">
+                                    <a href="#">
+                                        <h:graphicImage alt="product" name="gallery/thumb/templatemo_image_12.jpg"/>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- end of product gallery -->
+
+                <div class="cleaner_h40"></div>
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

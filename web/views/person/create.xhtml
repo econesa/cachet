@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:body>
+
+        <ui:composition template="/views/layouts/app.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="index"><span></span>Home</h:commandLink></li>
+                <li><h:commandLink action="gallery"><span></span>Proyectos</h:commandLink></li>
+            </ui:define>
+
+            <ui:define name="content">
+                <h1>Nuevo registro</h1>
+                <h:messages style="color: red" showDetail="false"/>
+                <h:form>
+                    <h:panelGrid columns="1" footerClass="footerForm">
+                        <h:panelGroup>
+                            <h:panelGrid columns="2" columnClasses="formLabel, formInput">
+                                <h:outputText value="Person Id:"/>
+                                <h:inputText label="Person Id" value="#{personBean.person.personId}"
+                                             required="true" size="20"/>
+                                <h:outputLabel value="Nombre:"/>
+                                <h:inputText label="Nombre" value="#{personBean.person.name}"
+                                             required="true" size="25"/>
+                                <h:outputLabel value="Apellido:"/>
+                                <h:inputText label="Apellido" value="#{personBean.person.surname}"
+                                             required="true" size="25"/>
+                                <h:outputLabel value="Password:"/>
+                                <h:inputSecret label="Password" value="#{personBean.person.password}"
+                                             required="true" size="15"/>
+                                <h:outputLabel value="Estado Actual:"/>
+                                <h:selectOneRadio value="#{personBean.person.relationshipStatus}" >
+                                    <f:selectItem itemLabel="Soltero" itemValue="Soltero"/>
+                                    <f:selectItem itemLabel="Casado" itemValue="Casado"/>
+                                </h:selectOneRadio>
+                                <h:outputLabel value="Sexo:"/>
+                                <h:selectOneRadio label="Sexo" value="#{personBean.person.gender}" >
+                                    <f:selectItem itemLabel="Masculino" itemValue="masculino"/>
+                                    <f:selectItem itemLabel="Femenino" itemValue="femenino"/>
+                                </h:selectOneRadio>
+                                <h:outputLabel value="Fecha de Nacimiento:"/>
+                                <h:inputText label="Fecha de Nacimiento" value="#{personBean.person.birthdate}" size="15">
+                                    <f:convertDateTime dateStyle="DD/MM/AA"/>
+                                </h:inputText>
+                                <h:outputLabel value="Orientacion Sexual:"/>
+                                <h:selectOneRadio label="Orientacion Sexual" value="#{personBean.person.sexualOrientation}" >
+                                    <f:selectItem itemLabel="No Especificado" itemValue="No Especificado"/>
+                                    <f:selectItem itemLabel="Heterosexual" itemValue="Heterosexual"/>
+                                    <f:selectItem itemLabel="Homosexual" itemValue="Homosexual"/>
+                                    <f:selectItem itemLabel="Bisexual" itemValue="Bisexual"/>
+                                </h:selectOneRadio>
+                                <h:outputLabel value="Email:"/>
+                                <h:inputText label="Email" value="#{personBean.person.email}" 
+                                             validator="#{personBean.validateEmail}" size="30"/>
+                                <h:outputLabel value="Acerca de ti:"/>
+                                <h:inputTextarea label="Acerca de ti" value="#{personBean.person.aboutMe}" cols="40" rows="5"/>
+                                <h:outputLabel value="Libros Favoritos:"/>
+                                <h:inputTextarea label="Libros Favoritos" value="#{personBean.person.books}" cols="40" rows="5"/>
+                                <h:outputLabel value="Musica Favorita:"/>
+                                <h:inputTextarea label="Musica Favorita" value="#{personBean.person.music}" cols="40" rows="5"/>
+                                <h:outputLabel value="Peliculas Favoritas:"/>
+                                <h:inputTextarea label="Peliculas Favoritas" value="#{personBean.person.movies}" cols="40" rows="5"/>
+                                <h:panelGroup>
+                                    <h:commandButton id="btnCreate" action="#{personBean.save}" value="Crear" styleClass="botaoPostIt" />
+                                    <h:commandButton id="btnCancel" action="index" value="Cancelar" styleClass="botaoPostIt" immediate="true" />
+                                </h:panelGroup>
+                            </h:panelGrid>
+                            <!--<f:facet name="footer">
+                                
+                            </f:facet>-->
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </h:body>
+</html>

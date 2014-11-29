@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="/views/layouts/app.xhtml">
+
+            <ui:define name="menu">
+                <li><h:commandLink action="app-main"><span></span>Home</h:commandLink></li>
+                <li><h:commandButton id="logout" value="Logout" action="#{userManager.logout}"/></li>
+            </ui:define>
+
+            <ui:define name="content">
+                <h1>Amigos de #{user.name}</h1>
+                <h:form>
+                    <h:dataTable value="#{fmanager.people}" var="item"
+                                 border="0" cellpadding="2" cellspacing="0"
+                                 rowClasses="jsfcrud_odd_row,jsfcrud_even_row"
+                                 rules="all" style="border:solid 1px">
+                        <h:column>#{item.id.friendId}</h:column>
+                    </h:dataTable>
+                </h:form>
+                <h:link outcome="app-main">Regresar</h:link>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

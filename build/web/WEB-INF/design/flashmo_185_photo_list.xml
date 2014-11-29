@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<photos>
+	<photo>
+		<thumbnail>s_flashmo_175_01.jpg</thumbnail>
+		<filename>flashmo_175_01.jpg</filename>
+		<title>Photo 01 title goes here</title>
+		<description>
+		This is a free flash xml photo gallery provided by www.flashmo.com website. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis aliquet ligula.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_02.jpg</thumbnail>
+		<filename>flashmo_175_02.jpg</filename>
+		<title>Photo 02 title goes here</title>
+		<description>
+		Ut vitae felis eu lectus ultrices varius. Aliquam lacus turpis, dapibus eget, tincidunt eu, lobortis et, magna. Integer pellentesque dignissim diam.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_03.jpg</thumbnail>
+		<filename>flashmo_175_03.jpg</filename>
+		<title>Photo 03 title goes here</title>
+		<description>
+		Phasellus ultrices justo non nibh. Sed a eros. Phasellus cursus lobortis arcu. Donec scelerisque. Integer ultrices. Donec hendrerit.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_04.jpg</thumbnail>
+		<filename>flashmo_175_04.jpg</filename>
+		<title>Photo 04 title goes here</title>
+		<description>
+		Cras ac odio ac mi imperdiet sollicitudin. In hac habitasse platea dictumst. Curabitur euismod scelerisque lacus. Cras pretium sem sed odio.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_05.jpg</thumbnail>
+		<filename>flashmo_175_05.jpg</filename>
+		<title>Photo 05 title goes here</title>
+		<description>
+		Phasellus id purus. Donec mattis egestas sem. Sed pretium, neque hendrerit rhoncus accumsan, nibh tellus pharetra neque, quis rutrum elit justo vitae sapien.
+		</description>
+	</photo>
+	
+	<photo>
+		<thumbnail>s_flashmo_175_06.jpg</thumbnail>
+		<filename>flashmo_175_06.jpg</filename>
+		<title>Photo 06 - Aliquam lacus turpis</title>
+		<description>
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis aliquet ligula. Phasellus id purus.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_07.jpg</thumbnail>
+		<filename>flashmo_175_07.jpg</filename>
+		<title>Photo 07 - Cras pretium sem sed odio</title>
+		<description>
+		Ut vitae felis eu lectus ultrices varius. Aliquam lacus turpis, dapibus eget, tincidunt eu, lobortis et, magna. Integer pellentesque dignissim diam.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_08.jpg</thumbnail>
+		<filename>flashmo_175_08.jpg</filename>
+		<title>Photo 08 - Praesent mattis varius quam</title>
+		<description>
+		Phasellus ultrices justo non nibh. Sed a eros. Phasellus cursus lobortis arcu. Donec scelerisque. Integer ultrices. Donec hendrerit.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_09.jpg</thumbnail>
+		<filename>flashmo_175_09.jpg</filename>
+		<title>Photo 09 - Vestibulum ultrices</title>
+		<description>
+		Cras ac odio ac mi imperdiet sollicitudin. In hac habitasse platea dictumst. Curabitur euismod scelerisque lacus. Cras pretium sem sed odio.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_175_10.jpg</thumbnail>
+		<filename>flashmo_175_10.jpg</filename>
+		<title>Photo 10  - Integer pellentesque dignissim diam</title>
+		<description>
+		Donec mattis egestas sem. Sed pretium, neque hendrerit rhoncus accumsan, nibh tellus pharetra neque, quis rutrum elit justo vitae sapien.
+		</description>
+	</photo>
+	
+	<photo>
+		<thumbnail>s_flashmo_180_01.jpg</thumbnail>
+		<filename>flashmo_180_01.jpg</filename>
+		<title>Photo 11 - Flash Photo Gallery</title>
+		<description>
+		This photo gallery is provided by flashmo.com for free of charge. You may download, modify and apply this flash source file for your websites.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_02.jpg</thumbnail>
+		<filename>flashmo_180_02.jpg</filename>
+		<title>Photo 12 - Praesent sollicitudin mollis leo</title>
+		<description>
+		Aliquam pretium porta odio. Fusce quis diam sit amet tortor luctus pellentesque. Donec accumsan urna non elit tristique mattis. Nunc eget urna. Mauris vestibulum felis eget tortor. Praesent mattis varius quam.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_03.jpg</thumbnail>
+		<filename>flashmo_180_03.jpg</filename>
+		<title>Photo 13 - Mauris congue felis at nisi</title>
+		<description>
+		Cras nulla sem, posuere non, molestie ut, molestie in, justo. In fermentum, eros ac tincidunt aliquam, elit velit semper nunc, a tincidunt orci lectus a arcu. 
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_04.jpg</thumbnail>
+		<filename>flashmo_180_04.jpg</filename>
+		<title>Photo 14 - Curabitur eleifend congue leo</title>
+		<description>
+		Maecenas dignissim, quam a posuere scelerisque, ligula arcu dictum turpis, id tempus turpis erat at nulla. Suspendisse hendrerit turpis id augue.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_05.jpg</thumbnail>
+		<filename>flashmo_180_05.jpg</filename>
+		<title>Photo 15 - Mauris congue felis at nisi</title>
+		<description>
+		Aliquam lacus turpis, dapibus eget, tincidunt eu, lobortis et, magna. Integer pellentesque dignissim diam. Quisque ornare pulvinar lorem. Fusce quis diam sit amet tortor luctus pellentesque. Donec accumsan urna non elit tristique mattis.
+		</description>
+	</photo>
+	
+	<photo>
+		<thumbnail>s_flashmo_180_06.jpg</thumbnail>
+		<filename>flashmo_180_06.jpg</filename>
+		<title>Photo 16 - Phasellus cursus lobortis arcu</title>
+		<description>
+		Fusce lacinia orci at nisi. Suspendisse at nisi nec diam pretium tincidunt. Ut vitae felis eu lectus ultrices varius.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_07.jpg</thumbnail>
+		<filename>flashmo_180_07.jpg</filename>
+		<title>Photo 17 - Nulla sed leo sed sapien sagittis aliquet</title>
+		<description>
+		Aliquam lacus turpis, dapibus eget, tincidunt eu, lobortis et, magna. Integer pellentesque dignissim diam. Quisque ornare pulvinar lorem.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_08.jpg</thumbnail>
+		<filename>flashmo_180_08.jpg</filename>
+		<title>Photo 18 - Curabitur eleifend congue leo</title>
+		<description>
+		Fusce lacinia orci at nisi. Suspendisse at nisi nec diam pretium tincidunt. Ut vitae felis eu lectus ultrices varius.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_09.jpg</thumbnail>
+		<filename>flashmo_180_09.jpg</filename>
+		<title>Photo 19 - Mauris congue felis at nisi</title>
+		<description>
+		Vestibulum ultrices. Pellentesque tempus sapien nec sem commodo ullamcorper. Aenean neque. Cras feugiat. In ut ante.  Integer pellentesque dignissim diam. Quisque ornare pulvinar lorem.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>s_flashmo_180_10.jpg</thumbnail>
+		<filename>flashmo_180_10.jpg</filename>
+		<title>Photo 20 - Vestibulum ullamcorper ipsum nec augue</title>
+		<description>
+		Fusce non lacus et lorem ornare interdum. Nunc eget urna. Mauris vestibulum felis eget tortor. Praesent mattis varius quam.
+		</description>
+	</photo>
+</photos>
